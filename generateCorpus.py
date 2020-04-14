@@ -5,7 +5,6 @@ with open('corpus/trucs_arno.json', 'r') as file:
 
 # Filtering based on Arno's id
 anroMessages = [message['content'] for message in messages if message['author']['id'] == '153947383804329984']
-# print(anroMessages)
 text = '\n'.join(anroMessages) + '\n'
 
 with open('corpus/corpus.txt', 'wb') as file:
